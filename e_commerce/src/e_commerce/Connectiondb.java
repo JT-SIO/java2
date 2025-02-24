@@ -20,11 +20,11 @@ public class Connectiondb {
             e.printStackTrace(); 
         } catch (SQLException e) {
             System.err.println("Erreur de connexion à la base de données.");
-            e.printStackTrace(); // Affichage des détails de l'erreur SQL
+            e.printStackTrace();
         } finally {
             if (connexion != null) {
                 try {
-                    connexion.close(); // Fermeture de la connexion
+                    connexion.close();
                     System.out.println("Connexion fermée.");
                 } catch (SQLException e) {
                     System.err.println("Erreur lors de la fermeture de la connexion.");
